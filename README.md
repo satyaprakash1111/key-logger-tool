@@ -6,7 +6,7 @@ python3 is already the newest version (3.13.5-1).
 python3-pip is already the newest version (25.2+dfsg-1).
 python3-venv is already the newest version (3.13.5-1).
 The following packages were automatically installed and are no longer required:
-  libbluray2  libgdata-common  libgeos3.13.1  libogdi4.1          libsframe1   libsoup-2.4-1      libtheora0     libtheoraenc1  libvpx9                python3-wheel-whl
+  libbluray2  libgdata-common  libgeos3.13.1  libogdi4.1          libsframe1   libsoup-2.4-1      libtheora0     libtheoraenc1  libvpx9                python3-wheel-whl 
   libgdal36   libgdata22       libhdf4-0-alt  libqt5ct-common1.8  libsigsegv2  libsoup2.4-common  libtheoradec1  libudfread0    python3-packaging-whl
 Use 'sudo apt autoremove' to remove them.
 
